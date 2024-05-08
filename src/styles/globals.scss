@@ -1,0 +1,6 @@
+@use "/src/styles/variables" as v;
+
+body {
+  background-color: v.$light-light;
+  color: v.$dark-normal;
+}
