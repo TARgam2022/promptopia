@@ -1,0 +1,62 @@
+@use "/src/styles/utilities/variables" as v;
+
+/* Buttons */
+.primary-btn {
+  background-color: v.$primary-normal;
+  border: none;
+  padding: 10px;
+  font-size: 15px;
+  font-family: 400;
+  color: v.$light-light;
+  border-radius: 8px;
+  transition: all 0.2s cubic-bezier(0.23, 0.76, 0.33, 0.84);
+}
+
+.primary-btn:hover {
+  transform: scale(110%);
+}
+
+.success-btn {
+  background-color: v.$success-normal;
+  border: none;
+  padding: 10px;
+  font-size: 15px;
+  font-family: 400;
+  color: v.$light-light;
+  border-radius: 8px;
+  transition: all 0.2s cubic-bezier(0.23, 0.76, 0.33, 0.84);
+}
+
+.success-btn:hover {
+  transform: scale(110%);
+}
+
+.error-btn {
+  background-color: v.$error-normal;
+  border: none;
+  padding: 10px;
+  font-size: 15px;
+  font-family: 400;
+  color: v.$light-light;
+  border-radius: 8px;
+  transition: all 0.2s cubic-bezier(0.23, 0.76, 0.33, 0.84);
+}
+
+.error-btn:hover {
+  transform: scale(110%);
+}
+
+.light-btn {
+  background-color: v.$light-normal;
+  border: none;
+  padding: 10px;
+  font-size: 15px;
+  font-family: 400;
+  color: v.$dark-light;
+  border-radius: 8px;
+  transition: all 0.2s cubic-bezier(0.23, 0.76, 0.33, 0.84);
+}
+
+.light-btn:hover {
+  transform: scale(110%);
+}
