@@ -24,9 +24,11 @@ $link-hover-color: #2581dc;
         background: v.$light-light;
         color: v.$dark-light;
         text-decoration: none;
+        transition: all 0.1s ease-in-out;
+        cursor: pointer;
         &:hover {
-          background: v.$light-normal;
-          color: v.$dark-light;
+          background: v.$primary-normal;
+          color: v.$light-light;
         }
         &:not(:only-child):after {
           padding-left: 4px;
