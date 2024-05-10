@@ -1,0 +1,50 @@
+@use "../utilities/variables" as v;
+$content-width: 1000px;
+$breakpoint: 799px;
+$nav-height: 60px;
+$link-hover-color: #2581dc;
+
+.navbar {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  float: left;
+  width: 100%;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      float: left;
+      position: relative;
+      a,
+      h1,
+      p {
+        display: block;
+        padding: 0 15px;
+        line-height: $nav-height;
+        background: v.$light-light;
+        color: v.$dark-light;
+        text-decoration: none;
+        &:hover {
+          background: v.$light-normal;
+          color: v.$dark-light;
+        }
+        &:not(:only-child):after {
+          padding-left: 4px;
+        }
+      } // Dropdown list
+      ul li {
+        min-width: 190px;
+        a {
+          padding: 15px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
+
+.nav-dropdown {
+  position: absolute;
+  z-index: 1;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
