@@ -24,11 +24,11 @@ export const Navbar = () => {
         </Link>
 
         <li>
-          <a href="#!" onClick={() => setDropdown(!dropdown)}>
+          <p onClick={() => setDropdown(!dropdown)}>
             Prompts
             {!dropdown && <FaCaretDown />}
             {dropdown && <FaCaretUp />}
-          </a>
+          </p>
           {dropdown && (
             <ul className="nav-dropdown">
               <Link href="/create">
